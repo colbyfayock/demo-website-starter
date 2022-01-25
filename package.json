@@ -9,14 +9,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "lint": "next lint",
     "start": "next start",
-    "lint": "next lint"
+    "static": "next build && next export"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.43.4"
+    "remark-html": "^15.0.1",
+    "remark-parse": "^10.0.1",
+    "sass": "^1.43.4",
+    "unified": "^10.1.1"
   },
   "devDependencies": {
     "eslint": "7",

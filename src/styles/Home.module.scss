@@ -1,39 +1,30 @@
-.container {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  max-width: 80rem;
-  min-height: 100vh;
-  padding: 0 2rem;
-  margin: 0 auto;
-}
-
-.main {
-  padding: 0 0 2rem;
-}
-
 .title {
   font-size: 4.5rem;
-  font-weight: 900;
-  line-height: 1.15;
-  margin: 4rem 0;
+  font-weight: bold;
+  margin: 0 0 4rem;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.subtitle {
+  font-size: 2rem;
+  margin: -3rem 0 4rem;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.signupContainer {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .signup {
 
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   border: solid 2px blueviolet;
   border-radius: .4em;
   padding: 2em;
-  margin: 0 0 3rem;
 
   h2 {
     font-size: 1.8em;
@@ -127,4 +118,9 @@
     margin: 0;
   }
 
+}
+
+.allPosts {
+  font-size: 1.5rem;
+  margin-top: 4rem;
 }
