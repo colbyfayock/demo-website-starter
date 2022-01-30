@@ -5,5 +5,11 @@
 }
 
 .main {
+
   padding: 3em 0;
+
+  @media (max-width: 720px) {
+    padding: 1em 0;
+  }
+
 }

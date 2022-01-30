@@ -6,14 +6,14 @@ import { getPosts } from '@lib/posts';
 import Layout from '@components/Layout';
 import Container from '@components/Container';
 
-import styles from '@styles/Home.module.scss'
+import styles from '@styles/Archive.module.scss'
 
 export default function Posts({ posts }) {
   return (
     <Layout>
       <Head>
         <title>Posts - Space Jelly</title>
-        <meta name="description" content="Awesome tutorials!" />
+        <meta name="description" content="All posts on Space Jelly" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

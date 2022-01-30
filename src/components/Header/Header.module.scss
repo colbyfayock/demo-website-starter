@@ -14,9 +14,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   @media (max-width: 720px) {
-    flex-wrap: wrap
+    flex-direction: column;
   }
 
 }
@@ -31,9 +32,6 @@
   margin: 0;
 
   @media (max-width: 720px) {
-    order: 1;
-    width: 50%;
-    height: 1.5em;
     margin-bottom: .2em;
   }
 

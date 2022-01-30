@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkHtml from 'remark-html';
@@ -20,21 +21,29 @@ export default function Post({ post }) {
       </Head>
 
       <Container>
-        <h1 className={styles.title}>{ post.title }</h1>
+        <header className={styles.header}>
+          <h1 className={styles.title}>{ post.title }</h1>
 
-        <p>{ new Date(post.date).toString() }</p>
+          <p className={styles.postDate}>{ new Date(post.date).toDateString() }</p>
 
-        <ul>
-          {post.categories.map(category => {
-            return (
-              <li key={category}>{ category }</li>
-            )
-          })}
-        </ul>
+          <ul className={styles.postCategories}>
+            {post.categories.map(category => {
+              return (
+                <li key={category}>{ category }</li>
+              )
+            })}
+          </ul>
+        </header>
 
         <div dangerouslySetInnerHTML={{
           __html: post.html
         }} />
+
+        <footer className={styles.footer}>
+          <p>
+            <Link href="/newsletter"><a>Sign up for our newsletter</a></Link> to get the latest posts straight to your inbox!
+          </p>
+        </footer>
       </Container>
 
     </Layout>

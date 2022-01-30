@@ -13,7 +13,7 @@ export default function Home({ posts }) {
     <Layout>
       <Head>
         <title>Space Jelly</title>
-        <meta name="description" content="Awesome tutorials!" />
+        <meta name="description" content="Cosmic web dev tutorials that will shock you with joy!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -31,7 +31,7 @@ export default function Home({ posts }) {
         <ul className={styles.posts}>
           {posts.map(post => {
             return (
-              <li key={post.id}>
+              <li key={post.slug}>
                 <a href={`/posts/${post.slug}`}>
                   <h3 className={styles.postTitle}>{ post.title }</h3>
                   <p className={styles.postDate}>{ new Date(post.date).toDateString() }</p>

@@ -1,16 +1,37 @@
+@import "@styles/settings/__settings";
+
 .title {
+
+  color: $color-brand-purple;
   font-size: 4.5rem;
   font-weight: bold;
   margin: 0 0 4rem;
+
+  @media (max-width: 720px) {
+    font-size: 3rem;
+  }
+
 }
 
 .subtitle {
+
   font-size: 2rem;
   margin: -3rem 0 4rem;
+
+  @media (max-width: 720px) {
+    font-size: 1.5rem;
+  }
+
 }
 
 .heading {
-  font-size: 3rem;
+
+  font-size: 3.2rem;
+
+  @media (max-width: 720px) {
+    font-size: 2rem;
+  }
+
 }
 
 .signupContainer {
@@ -25,6 +46,11 @@
   border: solid 2px blueviolet;
   border-radius: .4em;
   padding: 2em;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   h2 {
     font-size: 1.8em;
@@ -59,6 +85,12 @@
   display: flex;
   align-items: center;
   margin-left: 2em;
+
+  @media (max-width: 720px) {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 2em;
+  }
 
   p {
     margin: 0;
@@ -107,17 +139,9 @@
 }
 
 .postDate {
-  font-size: .8em;
+  font-size: .9em;
   color: gray;
   margin: .6em 0;
-}
-
-.postExcerpt {
-
-  p {
-    margin: 0;
-  }
-
 }
 
 .allPosts {
