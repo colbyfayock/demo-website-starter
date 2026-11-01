@@ -1,6 +1,6 @@
-# Website Starter
+# Demo Website Starter
 
-A starter project focused on website, built with Next.js.
+A Next.js Space Jelly blog starter that reads Markdown posts and pages from the repository, lists the five latest posts, and renders post details.
 
 ## Use this template
 
@@ -10,7 +10,7 @@ npx create-next-app -e https://github.com/colbyfayock/demo-website-starter
 
 ## Local setup
 
-Install dependencies with yarn and start the development server:
+Install dependencies with yarn, then start the development server:
 
 ```bash
 yarn install
@@ -19,5 +19,5 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-Use `yarn build` to build the project.
-Use `yarn start` to run the production build.
+Use `yarn build` to create a production build.
+After building, use `yarn start` to serve the production build.
